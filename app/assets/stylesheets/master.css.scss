@@ -23,6 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 .hut {
   font-family: 'tikihutregular';
   color: #CE5553;
+  //color: #a6009a;
   text-shadow: 1px 0 0 #333, -1px 0 0 #333, 0 1px 0 #333, 0 -1px 0 #333, 1px 1px #333, -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333;
 
 }
@@ -80,10 +81,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .pages a:hover {
-  color: #CE5553;
+  color: #a6009a;
 }
 
 .current {
   text-shadow: 1px 0 0 #333, -1px 0 0 #333, 0 1px 0 #333, 0 -1px 0 #333, 1px 1px #333, -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333;
-  color: #CE5553;
+  color: #a6009a;
 }

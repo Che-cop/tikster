@@ -40,7 +40,19 @@
     </div><!-- /.container-fluid -->
   </nav>
 
-<%= yield %>
+  <% if notice.present? %></if>
+  <p class="notice alert-success alert-dismissible">
+    <%= notice %>
+  </p>
+  <% end %>
+
+  <% if alert.present? %>
+  <p class="alert alert-danger">
+    <%= alert %>
+  </p>
+  <% end %>
+
+  <%= yield %>
 
 </body>
 </html>
