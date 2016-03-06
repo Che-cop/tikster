@@ -50,4 +50,6 @@ gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'sprockets', '2.11.0'
 
 gem 'kaminari'
-gem 'twitter-bootstrap-rails', :group => :assets 
+gem 'twitter-bootstrap-rails', :group => :assets
+
+gem 'simple_form'
