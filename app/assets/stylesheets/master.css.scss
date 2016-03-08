@@ -37,6 +37,16 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+.hut a{
+  color: #CE5553;
+}
+
+.hut a:hover{
+  color: #ADF122;
+  text-decoration: none;
+  font-weight: 900;
+}
+
 .aloha {
   font-family: 'kon_tiki_aloha_jfregular';
   text-align: center;
