@@ -55,3 +55,9 @@ gem 'twitter-bootstrap-rails', :group => :assets
 gem 'simple_form'
 
 gem 'devise', '>=3.2.4'
+
+gem 'data-confirm-modal', github: 'ifad/data-confirm-modal'
+
+gem 'geocoder'
+
+gem 'figaro', '>=1.0.0'
