@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #22D902;
 }
 
- ::-moz-selection {
+::-moz-selection {
   background: #a6009a;
   color: #22D902;
 }
@@ -98,7 +98,7 @@ label {
 }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus{
-    color: #ADF122;
+  color: #ADF122;
 }
 
 .booyah-box{
@@ -166,9 +166,9 @@ label {
   margin:0 auto;
 }
 
-.right {
-  text-align: right;
-  margin:0 auto;
+.sig {
+  padding-left: 36px;
+
 }
 
 .clear {
@@ -176,8 +176,8 @@ label {
 }
 
 blockquote {
-  background: #f9f9f9;
-  border-left: 10px solid rgba(206, 85, 83, 0.50);
+  background: #EBFCE8;
+  border-left: 6px solid rgba(206, 85, 83, 0.50);
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
