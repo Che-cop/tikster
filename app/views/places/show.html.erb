@@ -1,41 +1,50 @@
 <div class="booyah-box col-xs-10 col-xs-offset-1">
   <h1 class="hut"><%= @place.name %></h1>
   <h4 class="address"><%= @place.address %></h4><br />
-  <p><%= @place.description %></p> <br />
+  <div class="col-xs-12 col-sm-6">
 
-  <% if @place.latitude.present? && @place.longitude.present? %>
 
-  <script>
+    <p><%= @place.description %></p> <br />
+    <div id="map">
+      <% if @place.latitude.present? && @place.longitude.present? %>
 
-  function initMap() {
-    var myLatLng = {lat: <%= @place.latitude %>, lng: <%= @place.longitude %>};
+      <script>
 
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 13,
-      center: myLatLng
-    });
+      function initMap() {
+        var myLatLng = {lat: <%= @place.latitude %>, lng: <%= @place.longitude %>};
 
-    var marker = new google.maps.Marker({
-      position: myLatLng,
-      map: map,
-      title: 'Hello World!'
-    });
-  }
-  </script>
-  <script async defer
-  src="https://maps.googleapis.com/maps/api/js?signed_in=true&callback=initMap">
-  </script>
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: myLatLng
+        });
 
-  <div id="map"></div>
-  <br />
-  <% end %>
-  <div class="pull-left">
-    <% if current_user && current_user == @place.user %>
-    <%= link_to 'Edit', edit_place_path(@place), class: 'btn btn-sm btn-tiki'%>
-    <%= link_to 'Destroy', place_path(@place), method: :delete, title: 'Delete', data: {confirm: 'Are you sure you want to delete this place?', commit:'Delete'}, class: 'btn btn-sm btn-tiki'%>
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Hello World!'
+        });
+      }
+      </script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?signed_in=true&callback=initMap">
+      </script>
+
+    </div>
+
     <% end %>
+    <div class="pull-left">
+      <% if current_user && current_user == @place.user %>
+      <%= link_to 'Edit', edit_place_path(@place), class: 'btn btn-xs btn-tiki'%>
+      <%= link_to 'Destroy', place_path(@place), method: :delete, title: 'Delete', data: {confirm: 'Are you sure you want to delete this place?', commit:'Delete'}, class: 'btn btn-xs btn-tiki'%>
+      <% end %>
+
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-sm-6">
 
   </div>
+
 
 
   <div class="clearfix"></div>
@@ -70,19 +79,19 @@
     </button>
   </div>
 
-    <div class="clearfix"></div>
-        <% @place.comments.each do |comment| %>
-    <div class="col-xs-12 col-sm-6">
-      <blockquote>
-        <% if comment.humanized_rating.present? %>
-        <b><%= comment.humanized_rating %></b> -
-        <% end %>
-        <%= comment.message %>
-        <small class="sig"><%= comment.user.email %></small>
-      </blockquote>
-    </div>
-    <% end %>
-
-
+  <div class="clearfix"></div>
+  <% @place.comments.each do |comment| %>
+  <div class="col-xs-12 col-sm-6">
+    <blockquote>
+      <%= comment.message %><br />
+      <% if comment.humanized_rating.present? %>
+      <span class="star"><%= comment.humanized_rating %></span>
+      <span class="small"><%= comment.user.email %></span>
+      <% end %>
+    </blockquote>
   </div>
+  <% end %>
+
+
+</div>
 </div>

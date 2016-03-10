@@ -70,6 +70,7 @@ label {
 
 .btn-tiki{
   color: #ADF122;
+  margin-top: 7px;
   letter-spacing: .75px;
   background: #a6009a;
   -webkit-box-shadow:1px 1px 2px 0 #d0d0d0;
@@ -84,6 +85,11 @@ label {
 .btn-tiki:hover {
   color: #22D902;
 }
+
+.btn-tiki:focus {
+  color: #22D902;
+}
+
 
 .navbar.navbar-inverse {
   font-family: 'kon_tiki_aloha_jfregular';
@@ -158,7 +164,7 @@ label {
 }
 
 #map {
-  height: 300px;
+  height: 200px;
 }
 
 .center {
@@ -178,6 +184,7 @@ label {
 blockquote {
   background: #EBFCE8;
   border-left: 6px solid rgba(206, 85, 83, 0.50);
+  font-size: 16;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
@@ -192,4 +199,19 @@ blockquote:before {
 }
 blockquote p {
   display: inline;
+}
+.star {
+  color: #a6009a;
+  font-size: 29px;
+  text-shadow: .5px 0 0 #ADF122, -.5px 0 0 #ADF122, 0 .5px 0 #ADF122, 0 -.5px 0 #ADF122, .5px .5px #ADF122, -.5px -.5px 0 #ADF122, .5px -.5px 0 #ADF122, -.5px .5px 0 #ADF122;
+
+}
+
+blockquote .small{
+  display: inline;
+}
+
+.comment-title {
+  padding-right: 10px;
+  padding-bottom: 5px;
 }

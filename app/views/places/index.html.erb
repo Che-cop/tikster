@@ -8,18 +8,18 @@
   <h4 class="address"><%= place.address %></h4><br />
   <p><%= place.description %></p> <br />
 
-<!--  <% if place.user.present? %>
+  <!--  <% if place.user.present? %>
   <small><%= place.user.email %></small>
   <% end%> -->
 
   <% if place.comments.present? %>
   <div class="col-xs-12">
     <blockquote>
+      <%= place.comments.last.message %> <br />
       <% if place.comments.last.humanized_rating.present? %>
-      <b><%= place.comments.last.humanized_rating %></b> -
+      <span class="star"><%= place.comments.last.humanized_rating %></span>
+      <span class="small"><%= place.comments.last.user.email %></span>
       <% end %>
-      <%= place.comments.last.message %>
-      <small class="sig"><%= place.comments.last.user.email %></small>
     </blockquote>
   </div>
   <% end %>
