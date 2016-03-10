@@ -1,7 +1,7 @@
 class PlacesController < ApplicationController
 before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
   def index
-    @places = Place.order('created_at DESC').page(params[:page]).per(7)
+    @places = Place.order('id DESC').page(params[:page]).per(7)
   end
 
   def new
@@ -19,6 +19,7 @@ before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destro
 
   def show
     @place = Place.find(params[:id])
+    @comment = Comment.new
   end
 
   def edit
@@ -53,7 +54,7 @@ before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destro
     redirect_to root_path
   end
 
-  
+
   private
 
   def place_params

@@ -25,7 +25,7 @@
   <script async defer
   src="https://maps.googleapis.com/maps/api/js?signed_in=true&callback=initMap">
   </script>
-  
+
   <div id="map"></div>
   <br />
   <% end %>
@@ -37,3 +37,10 @@
   </div>
 
 </div>
+
+<div class = 'clear'></div>
+  <%= simple_form_for @comment, url: '#' do |f| %
+    <%= f.input :message %>
+    <%= f.input :rating %>
+    <%= f.submit "Add a Comment", class: 'btn btn-tiki' %>
+  <% end %>
