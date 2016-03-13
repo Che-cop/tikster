@@ -4,8 +4,9 @@ Tikster::Application.routes.draw do
 
   root 'places#index'
 
-  resources :places do 
+  resources :places do
     resources :comments, only: :create
+    resources :photos, only: :create
 
   end
 
