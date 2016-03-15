@@ -1,7 +1,5 @@
 Tikster::Application.configure do
 
-  Here is a sample configuration for ActionMailer.
-
   ActionMailer::Base.smtp_settings = {
     :port           => ENV['MAILGUN_SMTP_PORT'],
     :address        => ENV['MAILGUN_SMTP_SERVER'],
