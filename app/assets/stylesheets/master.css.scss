@@ -1,6 +1,6 @@
 
 body {
-  background:url('/assets/tree_bark.png');
+  background:url('/assets/tikibkgd.png');
   font-size: 18px;
 
 }
@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .address {
   font-style: italic;
-  font-size: 17px;
+  font-size: 1em;
   padding-top: 5px;
   color: #ADF122;
   text-shadow: 1px 0 0 #555, -1px 0 0 #555, 0 1px 0 #555, 0 -1px 0 #555, 1px 1px #555, -1px -1px 0 #555, 1px -1px 0 #555, -1px 1px 0 #555;
@@ -101,7 +101,7 @@ label {
 
 .navbar.navbar-inverse {
   font-family: 'kon_tiki_aloha_jfregular';
-  background:url('/assets/tweed.png');
+  background:url('/assets/bamboo.jpg');
   border-radius:0;
   box-shadow: 0px 1px 3px #2a2a2a;
   text-shadow: 2px 0 0 #222, -2px 0 0 #222, 0 2px 0 #222, 0 -2px 0 #222, 1px 1px #222, -1px -1px 0 #222, 1px -1px 0 #222, -1px 1px 0 #222;
@@ -120,7 +120,7 @@ label {
   -webkit-box-shadow:1px 1px 2px 0 #d0d0d0;
   -moz-box-shadow:1px 1px 2px 0 #d0d0d0;
   box-shadow:1px 1px 2px 0 #d0d0d0;
-  background:#EBFCE8;
+  background: #EBFCE8;
   border:1px solid #ccc;
   border-color:#e4e4e4 #bebebd #bebebd #e4e4e4;
   margin-top:10px;
@@ -141,14 +141,24 @@ label {
   color: #a6009a;
 }
 
-.pages a{
+.pagination{
+  text-align: center;
+  background: rgba(119, 68, 19, 0.5);
+  height: 20px;
+  width: auto;
+  margin: 0 auto;
+  padding: 0 5px 23px 5px;
+  border-radius: 50px;
+}
+
+.pagination a{
   font-family: 'kon_tiki_aloha_jfregular';
   color: #22D902;
   text-shadow: 1px 0 0 #333, -1px 0 0 #333, 0 1px 0 #333, 0 -1px 0 #333, 1px 1px #333, -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333;
   text-decoration: none;
 }
 
-.pages a:hover {
+.pagination a:hover {
   color: #a6009a;
 }
 
@@ -211,7 +221,7 @@ blockquote p {
 }
 .star {
   color: #a6009a;
-  font-size: 29px;
+  font-size: 1.5em;
   text-shadow: .5px 0 0 #ADF122, -.5px 0 0 #ADF122, 0 .5px 0 #ADF122, 0 -.5px 0 #ADF122, .5px .5px #ADF122, -.5px -.5px 0 #ADF122, .5px -.5px 0 #ADF122, -.5px .5px 0 #ADF122;
 
 }
@@ -249,9 +259,41 @@ blockquote .small{
   box-shadow: 0px 3px 8px #2a2a2a;
 }
 
+
 #user-pic {
   height:150px;
   width:auto;
   border: 5px solid black;
   border-radius: 10px;
+}
+
+//media breaks
+
+
+@media only screen and (max-width: 600px) {
+
+  body {
+    font-size: 16px;
+
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+  .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    height: 275px;
+    width: 100%;
+  }
+  .carousel-caption{
+
+    font-size: 1.7em;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+  .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    height: 800px;
+    width: 100%;
+  }
 }

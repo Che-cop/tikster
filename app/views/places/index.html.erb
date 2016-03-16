@@ -40,10 +40,15 @@
 </div>
 
 
+<div class="clearfix"></div>
+<br />
+<div class="center">
 
-<div class="pages">
-  <%= paginate @places %>
+    <%= paginate @places %>
+
 </div>
+
+
 
 
 
@@ -72,6 +77,10 @@
 
 <% end %>
 <br  />
-<div class="pages">
-  <%= paginate @places %>
+<div class="clearfix"></div>
+<div class="center">
+  <div class="pagination">
+    <%= paginate @places %>
+  </div>
 </div>
+<br />
