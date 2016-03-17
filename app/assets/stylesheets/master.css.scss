@@ -92,13 +92,6 @@ label {
 
 }
 
-.close {
-  font-family: 'tikihutregular';
-  color: #a6009a;
-  text-shadow:1px 0 0 #333, -1px 0 0 #333, 0 1px 0 #333, 0 -1px 0 #333, 1px 1px #333, -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333;
-  opacity: 0.8;
-}
-
 .navbar.navbar-inverse {
   font-family: 'kon_tiki_aloha_jfregular';
   background:url('/assets/bamboo.jpg');
@@ -120,7 +113,7 @@ label {
   -webkit-box-shadow:1px 1px 2px 0 #d0d0d0;
   -moz-box-shadow:1px 1px 2px 0 #d0d0d0;
   box-shadow:1px 1px 2px 0 #d0d0d0;
-  background: #EBFCE8;
+  background: #F4FFF2;
   border:1px solid #ccc;
   border-color:#e4e4e4 #bebebd #bebebd #e4e4e4;
   margin-top:10px;
@@ -135,6 +128,12 @@ label {
   font-size: 2.5em;
   font-family: 'tikihutregular';
 
+}
+
+.tikster {
+  color: #22D902;
+  font-size: 2.5em;
+  font-family: 'tikihutregular';
 }
 
 .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
@@ -204,7 +203,7 @@ label {
 }
 
 blockquote {
-  background: #EBFCE8;
+  background: #F4FFF2;
   border-left: 6px solid rgba(206, 85, 83, 0.50);
   font-size: 16;
   margin: 1.5em 10px;
@@ -289,7 +288,34 @@ input[type="file"] {
   box-shadow: none;
 }
 
-//media breaks
+.alert {
+  margin-top:20px;
+}
+
+//Modal------------
+
+.close {
+  font-family: 'tikihutregular';
+
+}
+
+
+.modal-title {
+    font-family: 'tikihutregular';
+    letter-spacing: 1.2px;
+    color: #CE5553;
+    text-shadow:1px 0 0 #333, -1px 0 0 #333, 0 1px 0 #333, 0 -1px 0 #333, 1px 1px #333, -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333;
+}
+
+.modal-body{
+  font-family: 'kon_tiki_aloha_jfregular'
+}
+
+.modal-footer {
+    font-family: 'kon_tiki_aloha_jfregular'
+}
+
+//media breaks---------------
 
 
 @media only screen and (max-width: 600px) {

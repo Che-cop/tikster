@@ -1,6 +1,8 @@
 class Comment < ActiveRecord::Base
   belongs_to :user
   belongs_to :place
+  validates :message, presence: true, length: { minimum: 3, maximum: 100}
+  validates :rating, presence: true
   after_create :send_comment_email
 
 
