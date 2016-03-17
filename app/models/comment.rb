@@ -3,6 +3,7 @@ class Comment < ActiveRecord::Base
   belongs_to :place
   after_create :send_comment_email
 
+
   RATINGS ={
     "\u272F" => '1_star',
     "\u272F\u272F" => '2_star',
