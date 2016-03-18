@@ -1,11 +1,11 @@
 
 
 <div class="booyah-box col-xs-10 col-xs-offset-1">
-  <div class="col-xs-4">
+  <div class="col-xs-12 col-sm-4 center">
     <%= image_tag 'tikimask.jpg', id: 'user-pic' %>
   </div>
 
-  <div class="col-xs-8">
+  <div class="col-xs-12 col-sm-8 center">
     <h1><%= @user.email %></h1>
     <h3>Member Since: <%= @user.created_at.strftime("%B %d, %Y") %></h3>
     <h4><%= @user.places.count %> places added</h4>
@@ -16,7 +16,7 @@
   <br />
 </div>
 
-<div class="booyah-box col-xs-10 col-xs-offset-1">
+<div class="booyah-box col-xs-10 col-xs-offset-1 ">
   <h3 class="text-center hut"><span class="star">&#10031</span> My Comments <span class="star">&#10031</span></h3>
   <br />
   <% @user.comments.each do |comment| %>

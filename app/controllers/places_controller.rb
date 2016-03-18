@@ -50,7 +50,6 @@ before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destro
     if @place.user != current_user
       return render text: 'Not allowed', status: :forbidden
     end
-
     @place.destroy
     redirect_to root_path
   end
