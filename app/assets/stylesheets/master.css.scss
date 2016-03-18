@@ -109,6 +109,22 @@ label {
   color: #ADF122;
 }
 
+.navbar-inverse .navbar-toggle {
+  border-color: #111;
+  background-color: #CE5553;
+
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+background-color: #ADF122;
+
+}
+
+.navbar-inverse .navbar-toggle .icon-bar{
+  background-color: #111;
+
+}
+
 .booyah-box{
   -webkit-box-shadow:1px 1px 2px 0 #d0d0d0;
   -moz-box-shadow:1px 1px 2px 0 #d0d0d0;
@@ -223,7 +239,7 @@ blockquote p {
 }
 .star {
   color: #a6009a;
-  font-size: 1.5em;
+  font-size: 1.1em;
   text-shadow: .5px 0 0 #ADF122, -.5px 0 0 #ADF122, 0 .5px 0 #ADF122, 0 -.5px 0 #ADF122, .5px .5px #ADF122, -.5px -.5px 0 #ADF122, .5px -.5px 0 #ADF122, -.5px .5px 0 #ADF122;
 
 }
@@ -329,6 +345,10 @@ input[type="file"] {
 
   h1 {
     font-size: 30px;
+  }
+
+  h2 {
+    font-size: 26px;
   }
   .carousel-inner > .item > img, .carousel-inner > .item > a > img {
     height: 275px;
